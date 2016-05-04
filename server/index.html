@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Video Time Capsule</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/jquery/dist/jquery.min.js" defer></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-route/angular-route.min.js"></script>
+    <script src="/ng-file-upload/dist/ng-file-upload-shim.min.js"></script>
+    <script src="/ng-file-upload/dist/ng-file-upload.min.js" defer></script>
+    <script src="angular-ui-router/release/angular-ui-router.min.js" defer></script>
+    <script src="/js/app.js" defer></script>
+    <script src="/js/factories/upload.factory.js" defer></script>
+    <script src="/js/factories/signup.factory.js" defer></script>
+    <script src="/js/factories/retrieve.factory.js" defer></script>
+    <script src="/js/factories/login.factory.js" defer></script>
+    <script src="/js/controllers/upload.controller.js" defer></script>
+    <script src="/js/controllers/uploadVidInfo.controller.js" defer></script>
+    <script src="/js/controllers/retrieve.controller.js" defer></script>
+    <script src="/js/controllers/watchVideo.controller.js" defer></script>
+    <script src="/js/controllers/signup.controller.js" defer></script>
+    <script src="/js/controllers/videoList.controller.js" defer></script>
+    <script src="/js/controllers/login.controller.js" defer></script>
+    <script src="/js/directives/navbar.directive.js" defer></script>
+    <script src="/js/states/upload.state.js" defer></script>
+    <script src="/js/states/login.state.js" defer></script>
+    <script src="/js/states/retrieve.state.js" defer></script>
+    <script src="/js/states/videoList.state.js" defer></script>
+    <script src="/js/states/watchVideo.state.js" defer></script>
+    <script src="/js/states/signup.state.js" defer></script>
+    <script src="/js/states/uploadVidInfo.state.js" defer></script>
+    <script src="/js/filters/date-filter.js" defer></script>
+  </head>
+
+  <body ng-app="fileUpload">
+
+    <navbar></navbar>
+  	<!-- <div id="uploads"></div>
+  	<div class="dropzone" id="dropzone">Drop Video Here</div> -->
+
+
+
+<div class="col-md-12">
+
+  <ui-view></ui-view>
+  
+
+<!--   <div ng-controller='PlayVideoCtrl' class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <video width="400" controls>
+        <source type="video/mp4">
+      </video>
+    </div>
+  </div> -->
+
+</div>
+
+
+
+
+  </body>
+
+</html>

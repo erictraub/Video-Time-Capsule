@@ -1,0 +1,90 @@
+body {
+	font: 'Ariel', sans-serif;
+    background-color: #D3D3D3 !important;
+}
+
+.dropzone {
+	width:300px;
+	height: 300px;
+	border: 2px dashed #ccc;
+	color:300px;
+	line-height: 300px;
+	text-align: center;
+}
+
+.dropzone.dragover {
+	border-color: #000;
+	color: #000;
+}
+
+
+/*for other vid ^*/
+
+
+.drop-box
+  {
+
+    @include curved_box(8px);
+    width: 50px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 100px;
+}
+
+.drop-box.dragover
+{
+    border-color: #0e0;
+    background-color: #b2fab2;
+}
+
+.drop-box.dragover-err
+{
+    border-color: #f00;
+    background-color: #ffb2b2;
+}
+
+/**/
+
+legend {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.nav-logout {
+    margin-right: 1em;
+}
+
+.med {
+    font-size: 18px;
+}
+.big {
+    font-size: 20px;
+}
+
+.lge {
+    font-size: 28px;
+}
+
+.btm-lg {
+    margin-bottom: 3em;
+}
+
+.btm-sm {
+    margin-bottom: 2em;
+}
+
+td, th {
+    font-size: 1.3em;
+}
+
+h1 {
+    color: #4169E1 !important;
+}
+
+

@@ -1,0 +1,20 @@
+<div class="col-md-12">
+  <table class='table table-hover'>
+    <thead>
+      <tr>
+        <th>Video Name</th>
+        <th>Date Created</th>
+        <th>Date Available</th>
+        <th>Days Until Available</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="video in myUploads | orderBy: 'daysTillAvailable'" ui-sref="watchVideo({videoId: video._id})">
+        <td>{{ video.videoName }}</td>
+        <td>{{ video.createDate | toDate }}</td>
+        <td>{{ video.openDate | toDate }}</td>
+        <td>{{ video.daysTillAvailable }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
