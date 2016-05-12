@@ -1,3 +1,4 @@
+// example:
 // var date = "2016-05-01T03:42:28.261Z";
 
 
@@ -23,4 +24,3 @@ app.filter('toDate', function() {
 	};	
 });
 
-// make more ways of producing date & make it an npm package??

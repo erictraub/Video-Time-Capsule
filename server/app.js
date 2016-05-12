@@ -6,19 +6,14 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 
-// app.use(cookieParser());
-
-
 app.use(session({
 	secret: 'tongiscool'
 }));
 
-// app.use(function(req, res, next) {
-// 	console.log(req.session);
-// 	next();
-// });
-
-
+app.use(function(req, res, next) {
+	console.log(req.session);
+	next();
+});
 
 
 app.use(bodyParser.json());
